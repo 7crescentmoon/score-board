@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Papan Score</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title"><span style="color: #f94f6d;">S</span>CORE BOAR<span style="color: #9aabd8;">D</span></h1>
+      <div class="display">
+        <div id="p1-display">
+          <p>0</p>
+          <span class="team-name" id="p1-name">team #1</span>
+          <span class="winner" id="p1-win">Winner</span>
+        </div>
+        <span>VS</span>
+        <div id="p2-display">
+          <p>0</p>
+          <span class="team-name" id="p2-name">team #2</span>
+          <span class="winner" id="p2-win">Winner</span>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <button id="p1-btn">P1</button>
+        <div class="winPoints-wrapper">
+          <select name="winPoints" id="playTo">
+            <option value="none">chose your limit score</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+        <button id="p2-btn">P2</button>
+      </div>
+
+      <div class="bottom-wrapper">
+        <form action="" class="form-p1">
+          <input type="text" id="inpt-team1" placeholder="team name #1" autocomplete="off" />
+          <button>enter</button>
+        </form>
+        <button id="reset">RESET</button>
+        <form action="" class="form-p2">
+          <button>enter</button>
+          <input type="text" id="inpt-team2" placeholder="team name #2" autocomplete="off"/>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
