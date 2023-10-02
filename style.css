@@ -114,23 +114,6 @@ body{
 	justify-content: space-around;
 }
 
-#reset {
-	width: 5vw;
-	height: 5vh;
-	border: none;
-	border-radius: 5px;
-	background-color: #f94f6d;
-	font-weight: bold;
-	cursor: pointer;
-	transition: 0.3s;
-	color: #EFEFEF;
-}
-
-#reset:hover, #reset:focus {
-	background-color: #9aabd8;
-	color: #1f2937
-}
-
 #p1-display .team-name{
 	position: absolute;
 	top: -10px;
@@ -195,4 +178,48 @@ body{
 	height: 1.5rem;
 	padding: .3rem;
 	border-radius: 5px;
+}
+
+.btn-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 7vw;
+	height: 10vh;
+}
+
+#reset {
+	width: 100%;
+	height: 50%;
+	border: none;
+	border-radius: 5px;
+	background-color: #f94f6d;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s;
+	color: #EFEFEF;
+}
+
+#reset:hover, #reset:focus {
+	background-color: #9aabd8;
+	color: #1f2937
+}
+
+#enter-name {
+	width: 100%;
+	height: 50%;
+	border: none;
+	border-radius: 5px;
+	background-color: #9aabd8;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s;
+	color: #282828;
+}
+
+#enter-name:hover, #enter-name:focus {
+	background-color: #f94f6d;
+	color: #EFEFEF;
 }

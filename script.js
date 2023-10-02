@@ -9,8 +9,7 @@ const p2Display = document.querySelector("#p2-display p");
 const p1Name = document.querySelector("#p1-name");
 const p2Name = document.querySelector("#p2-name");
 
-const formP1 = document.querySelector(".form-p1");
-const formP2 = document.querySelector(".form-p2");
+const btnName = document.querySelector("#enter-name");
 const valP1Name = document.querySelector("#inpt-team1");
 const valP2Name = document.querySelector("#inpt-team2");
 
@@ -45,6 +44,8 @@ function reset() {
   p2Btn.setAttribute("disabled", "");
   p2Win.style.display = "none";
   p1Win.style.display = "none";
+  p1Name.innerText = 'team #1';
+  p2Name.innerText = 'team #1';
   playTo.value = "none";
 }
 
@@ -79,22 +80,16 @@ playTo.addEventListener("change", function () {
   reset;
 });
 
-formP1.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (valP1Name.value != "") {
+console.log( btnName.addEventListener("click", () => {
+  if (valP1Name.value != "" && valP2Name.value != "") {
     const p1Value = valP1Name.value;
-    p1Name.innerText = p1Value;
-    valP1Name.value = "";
-  }
-});
-
-formP2.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (valP2Name.value != "") {
     const p2Value = valP2Name.value;
+    p1Name.innerText = p1Value;
     p2Name.innerText = p2Value;
+    valP1Name.value = "";
     valP2Name.value = "";
   }
-});
+}))
+
 
 disableBtn();
